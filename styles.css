@@ -138,3 +138,36 @@ footer {
 #luol a {
     text-decoration: none;
 }
+.socio {
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #eaff00; 
+    color: #fff; 
+    padding: 15px 30px; 
+    /* Removendo border-radius para torná-lo quadrado */
+    /* border-radius: 50%; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+    /* Adicionando animação de brilho */
+    animation: shine 2s infinite alternate;
+}
+.socio p{
+    font-size: 10px;
+    color: #000000;
+}
+.socio a{
+    text-decoration: none;
+}
+
+/* Definindo a animação de brilho */
+@keyframes shine {
+    from {
+        background-color: #f6ff00; /* Cor inicial */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    to {
+        background-color: #fffc34; /* Cor brilhante */
+        box-shadow: 0 0 20px #66b3ff; /* Brilho */
+    }
+}
